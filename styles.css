@@ -1,0 +1,56 @@
+/* CSS for game container */
+.game-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange elements vertically */
+  justify-content: center; /* Center elements vertically */
+  align-items: center; /* Center elements horizontally */
+  height: 100vh; /* Set the container height to full viewport height */
+}
+
+/* CSS for touch controls */
+#touch-controls {
+  position: absolute; /* Position the controls */
+  top: 50%; /* Position at the vertical center */
+  left: 20%; /* Position at 20% from the left */
+  transform: translate(-50%, -50%); /* Center the controls */
+}
+
+/* CSS for game canvas */
+#gameCanvas {
+  background-color: #000000; /* Set the background color */
+  background-image: url("background.png"); /* Set the background image */
+  background-repeat: no-repeat; /* Disable background image repetition */
+  background-size: cover; /* Scale the background image to cover the canvas */
+  margin-bottom: 150px; /* Add margin at the bottom to create space for buttons */
+}
+
+/* CSS for retry button */
+#retryButton {
+  display: none; /* Hide the retry button initially */
+  margin: -80px auto; /* Center the button horizontally with negative top margin */
+  padding: 10px 20px; /* Add padding to the button */
+  background-color: #ff0000; /* Set the background color */
+  color: #fff; /* Set the text color */
+  font-size: 16px; /* Set the font size */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+/* CSS for mute button */
+#muteButton {
+  margin: 0px auto; /* Center the button horizontally */
+  padding: 10px 20px; /* Add padding to the button */
+  background-color: #333; /* Set the background color */
+  color: #fff; /* Set the text color */
+  font-size: 16px; /* Set the font size */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+/* CSS for win text */
+#winText {
+  font-size: 24px; /* Set the font size */
+  color: #fff; /* Set the text color */
+  margin-top: 10px; /* Adjust the margin-top as needed */
+  text-align: center; /* Center the text */
+}

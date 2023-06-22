@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chasing Bus</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <!-- Mute button -->
+    <button id="muteButton">Mute</button>
+
+    <!-- Game container -->
+    <div class="game-container">
+      <canvas id="gameCanvas" width="800" height="600"></canvas>
+      <!-- Touch controls -->
+      <div id="touch-controls">
+        <button id="touch-up">Up</button>
+        <button id="touch-down">Down</button>
+      </div>
+    </div>
+
+    <!-- Retry button -->
+    <button id="retryButton" style="display: none;">Retry</button>
+
+    <!-- Background music -->
+    <audio id="bg-music">
+      <source src="backgroundneon.mp3" loop type="audio/mp3">
+    </audio>
+
+    <!-- Game over sound -->
+    <audio id="gameover-sound">
+      <source src="backgroundneon.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Game script -->
+    <script src="game.js"></script>
+  </body>
+</html>
